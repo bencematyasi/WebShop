@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="products.js"></script>
+    <meta charset="UTF-8">
+    <title>Products - Admin page</title>
+</head>
+<body>
+<h1>Products</h1>
+<a href="orderAdmin.html">Go to Orders</a>
+<p>name: <input type=""text id="name"></p>
+<p>category: <input type=""text id="category"></p>
+<p>price: <input type=""text id="price"></p>
+<p>stock: <input type=""text id="stock"></p>
+<p>description: <input type=""text id="description"></p>
+<p>size: <input type=""text id="size"></p>
+<p>img url: <input type=""text id="imgurl"></p>
+<button id="cProduct" onclick="addProduct()">Add new product</button>
+<table id="products" style="width:100%;align:center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Description</th>
+            <th>Size</th>
+            <th>Image url</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Titillium+Web');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+body{
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav nav nav"
+      "article article article"
+      "footer footer footer";
+    grid-template-rows: 150px 80px 1fr 70px;  
+    grid-template-columns: 20% 1fr 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffeee7;
+}
+
+#IMAGE {
+    width:  180px;
+    height: 180px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 63px -7px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 63px -7px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 63px -7px rgba(0,0,0,0.36);
+    background-image: url(https://i.imgur.com/nTP32v6.png);
+    background-size: cover;
+    position: absolute;
+    margin-left: 10%;
+}
+
+footer{
+    background-color: #f6921e;
+    height: 130px;
+    
+    
+}
+
+.icons{
+    
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    padding:30px 0 0 0;
+    
+    
+    
+    
+}
+
+header {   
+    
+    display: grid;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: initial;
+    grid-area: header; 
+    background-image: url(https://i.imgur.com/qjwGomQ.jpg);
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+
+}
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+header h1{
+    font-size: 300%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h2{
+    display: flex;
+    color: rgb(0, 0, 0);
+    
+    position: center;
+    text-align: center;
+    font-size: .5cm;
+    
+ }
+
+#header_icon {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    font-size: 320%;
+    align-self: center;
+}
+nav {
+    grid-area: nav;
+    background-color: #f6921e;  
+    position: relative;
+}
+main{
+    display: grid;
+    grid-area: article;     
+    margin: 0 auto; 
+}
+footer {
+    grid-area: footer;
+
+}
+.img {
+    display: block;
+    margin-left: 350px;
+    margin-top: 100px;
+}
+
+
+
+#STRIPE {
+}
+
+
+
+
+.nav{
+    font-size: .9cm;
+    color: #000000;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    font-size: .6cm;
+    display:inline-block;
+    padding:20px;
+    padding-right: 50px;
+    text-decoration-line: none;
+    color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+li a:hover {
+
+}
+
+
+#product_area {
+    display: flex;
+    flex-wrap: wrap;
+}   
+
+.product_area {
+    
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    
+}
+
+    /* Product section */
+
+    .product {
+        
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;
+        -webkit-box-shadow: 0px 6px 16px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 6px 16px -2px rgba(0,0,0,0.75);
+        box-shadow: 0px 6px 16px -2px rgba(0,0,0,0.75);
+        background-color: #f5f3f3;
+       
+       border-bottom: solid 0.5px black;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+        min-width: 300px;
+        margin: 3rem;
+    }
+        .product_img {
+            padding: 10px 0 10px 0;
+            
+
+        }
+        .product .product_img img {
+            padding-top: 30px;  
+            width:50%;
+            background-size: contain;
+            
+
+        }
+        .product .product_price { 
+            font-size: 10px;
+            font-weight: 800; 
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding:10px 0;
+            background-color: #ffb270;
+            
+
+        }
+        
+        
+        .product .product_buy {
+            display: flex;
+           justify-content: center;
+           padding-bottom: 10px;
+           background-color: #ffb270;
+           border-radius: 0px 0px 10px 10px;
+            -moz-border-radius: 0px 0px 10px 10px;
+            -webkit-border-radius: 0px 0px 10px 10px;
+            border: 0px solid #000000;
+ 
+        
+        }  
+
+          .product .product_buy a {
+            
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Titillium Web', sans-serif;
+            font-style: initial;
+            background-color: #f6921e;
+            color:#000000;
+            font-size: 20px;
+            padding:5px 30px 5px 30px;
+            -webkit-box-shadow: 0px 0px 34px -12px rgba(0,0,0,0.61);
+            -moz-box-shadow: 0px 0px 34px -12px rgba(0,0,0,0.61);
+            box-shadow: 0px 0px 34px -12px rgba(0,0,0,0.61);
+ }
+        
+ .product .product_buy  :hover{
+
+
+
+ }
+
+
+
+ #searchbar {
+     position: absolute;
+     right:30px;
+     top: 30%;
+     padding: 10px;
+     
+
+
+
+ }
+
+ #searchbar input {
+     background-color: #f6921e;
+     border: none;
+     border-bottom: 2px solid #000000;
+ }
+ a {
+     color: black;
+     
+ }
+ 
+.product_info{
+    width: 100px;
+    height: 50px;
+    background-color: aqua;
+    position: relative;
+    left: 0px;
+    top: 200px;
+    z-index: 100;
+    transition: all 0.4s ease-in-out;
+        
+
+
+
+}
+
+#product_image1:hover #product_info1 {
+    width: 200px;
+
+}
+
+#logo {
+    position: absolute;
+    left: 10%;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #logo {
+        display :none;
+    }
+
+    #searchbar{
+        display:none;
+    }
+
+    
+}
+              
+
+
+
+
+
+
+
+
