@@ -202,8 +202,8 @@ li a:hover {
         }
         .product .product_img img {
             padding-top: 30px;
-            max-width: 150px;
-            max-height:190px;
+            width: 190px;
+            mheight:230px;
 
             background-size: contain;
             
