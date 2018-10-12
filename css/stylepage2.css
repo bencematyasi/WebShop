@@ -91,6 +91,7 @@ h2{
     text-align: center;
     font-size: .5cm;
     
+    
  }
 
 #header_icon {
@@ -202,8 +203,8 @@ li a:hover {
         }
         .product .product_img img {
             padding-top: 30px;
-            max-width: 150px;
-            max-height:190px;
+            width: 200px;
+            weight:240px;
 
             background-size: contain;
             

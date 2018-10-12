@@ -32,7 +32,7 @@ $(document).ready(function () {
                     "<img src='"+ product.image+ "'>" +
                 "</div>" +
                 "<div  id='product_price'>" +
-                     "<h2>" + product.price+"</h2>"+
+                     "<h2>" + product.price+" DKK</h2>"+
                 "</div>" +
                 "<div id='product_desc'>" +
                     "<span>" + product.description + "</span>" +

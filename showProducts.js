@@ -12,7 +12,7 @@ $(function (){
                             "<div class='product_img'>" +
                                 "<img src='" + prod.image +"'></div>" +
                             "<div class='product_price'>" +
-                                     "<h2>"+ prod.price  +"</h2></div>" +
+                                "<h2>" + prod.price+" DKK</h2>"+
 
                              "<div class='product_buy'><a style='text-decoration:none' onclick='openDetailPage(" + prod.id + ")' target='_self'>BUY</a>"+
                     "</div>"+
